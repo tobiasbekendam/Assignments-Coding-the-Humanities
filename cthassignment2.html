@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+ 
+ <html>
+
+     <head>
+        
+        <style>
+            img {
+                width: 500px;
+            }
+        
+        </style>
+        
+        <link rel="stylesheet" type="text/css" href="cthassignment2.css">
+     </head>     
+         
+    <body style="margin:50px"> 
+       
+       <script type="text/javascript">
+            
+            var angle = 0;
+            var img = document.getElementById('image');
+
+            var turn;
+            turn = function(){
+                angle+=90;
+                document.getElementById('image').style.transform = 'rotate('+angle+'deg)'; 
+                console.log("click received");
+                console.log(angle + " degrees")
+            };
+            
+        </script>
+    
+    <body>
+       
+       <script language="javascript" type="text/javascript" src="cthassignment2.js"></script>
+         
+       <body background="http://7-themes.com/data_images/out/47/6932033-space-background-25628.jpg">
+       
+                
+       <div style="width:100%; height:100%" align="center">
+            <button id="turnbutton" name="button" onClick="turn();">Turn</button>
+        
+        <div id="imageDiv">
+        
+            <img id="image" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5ZwrY3sbcpUMOXRpsfbNFWMt6TvE2WUQm9Y5yCt5gZaLMRg2yNg">
+            
+           
+            <div id="nextbutton">    
+            <button id="next" name="nextButton" onClick="next();">Next Image</button>
+            </div>
+        
+    
+            <button class="bigbutton" id="guessbutton" name="guess" onClick="guess();">Guess</button>
+         </div>
+        
+            
+     </body>    
+    
+ </html> 
