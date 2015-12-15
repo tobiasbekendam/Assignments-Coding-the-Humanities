@@ -1,0 +1,9 @@
+#image{
+    width: 70vh;
+    height: 70vh;
+}
+
+#imageDiv {
+    text-align: center;
+    position: relative;
+}
